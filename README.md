@@ -1,2 +1,0 @@
-# arslan
-Personal Web portfoilio.
