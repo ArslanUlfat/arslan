@@ -1,44 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const sweetScroll = new SweetScroll({ /* options */ });
-
-  const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector("[data-navbar]");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  navTogglers.forEach(toggler => {
-    toggler.addEventListener("click", () => {
-      navbar.classList.toggle("hidden");
-    });
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navbar.classList.add("hidden");
-    });
-  });
+  document.querySelectorAll("[data-nav-toggler]").forEach(toggler => 
+    toggler.addEventListener("click", () => navbar.classList.toggle("hidden"))
+  );
+  document.querySelectorAll(".nav-link").forEach(link => 
+    link.addEventListener("click", () => navbar.classList.add("hidden"))
+  );
 });
 
-window.addEventListener('scroll', function() {
-  const scrollTop = window.scrollY;
-  const docHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollTop / docHeight) * 100;
-  const progressBar = document.getElementById('progress-bar');
-  progressBar.style.width = scrollPercent + '%';
+window.addEventListener("scroll", () => {
+  const progressBar = document.getElementById("progress-bar");
+  progressBar.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`;
 });
-
-
-function scrollRight() {
-  const container = document.querySelector('.horizontal-scroll');
-  container.scrollBy({
-    left: 300,
-    behavior: 'smooth'
-  });
-}
-
-function scrollLefts() {
-  const container = document.querySelector('.horizontal-scroll');
-  container.scrollBy({
-    left: -300,
-    behavior: 'smooth'
-  });
-}
+const scrollHorizontal = (distance) => {
+  document.querySelector(".horizontal-scroll").scrollBy({ left: distance, behavior: "smooth" });
+};
+const scrollRight = () => scrollHorizontal(300);
+const scrollLefts = () => scrollHorizontal(-300);
