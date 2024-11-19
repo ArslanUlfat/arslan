@@ -39,7 +39,7 @@ html {
 
 .project-card {
   flex: 0 0 auto;
-  width: 450px;
+  max-width: 450px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
