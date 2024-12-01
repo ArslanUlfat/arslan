@@ -55,14 +55,14 @@
   <script defer src="https://cloud.umami.is/script.js" data-website-id="b9c61db2-8260-489e-93cb-3e3722d4f3a4"></script>
 </head>
 
-<body class="font-sans bg-gray-50 text-gray-900">
-  <div id="progress-bar-container" class="fixed top-0 left-0 w-full h-1 bg-gray-200 z-20">
-    <div id="progress-bar" class="h-full bg-blue-600" style="width: 0;"></div>
+<body class="bg-gray-50 font-sans text-gray-900">
+  <div id="progress-bar-container" class="top-0 left-0 z-20 fixed bg-gray-200 w-full h-1">
+    <div id="progress-bar" class="bg-blue-600 h-full" style="width: 0;"></div>
   </div>
-  <header class="fixed top-0 left-0 w-full bg-white z-10 lg:px-20 px-10">
-    <div class="container mx-auto flex justify-between items-center py-4">
+  <header class="top-0 left-0 z-10 fixed bg-white px-10 lg:px-20 w-full">
+    <div class="flex justify-between items-center mx-auto py-4 container">
       <img src="./assets/images/logo.svg" alt="Arslan Logo" class="cursor-pointer">
-      <nav class="hidden md:flex space-x-6">
+      <nav class="md:flex space-x-6 hidden">
         <a href="#" class="text-gray-900 hover:text-blue-600">Home</a>
         <a href="#portfolio" class="text-gray-900 hover:text-blue-600">Portfolio</a>
         <a href="#about" class="text-gray-900 hover:text-blue-600">About</a>
@@ -75,8 +75,8 @@
     </div>
   </header>
 
-  <div class="md:hidden fixed inset-0 bg-white z-40 hidden" data-navbar>
-    <div class="flex justify-between items-center py-4 border-b px-10">
+  <div class="z-40 fixed inset-0 hidden md:hidden bg-white" data-navbar>
+    <div class="flex justify-between items-center px-10 py-4 border-b">
       <img src="./assets/images/logo.svg" alt="Arslan Logo" class="cursor-pointer">
       <button class="text-2xl text-blue-600" aria-label="close menu" data-nav-toggler>
         <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -92,68 +92,145 @@
   </div>
 
   <main>
-    <section class="bg-blue-50 py-16 lg:py-20 lg:px-20 px-10">
-      <div class="container mx-auto flex flex-col md:flex-row items-center mt-10">
-        <div class="md:w-1/2 text-center md:text-left">
-          <h1 class="text-5xl font-bold mb-6 text-blue-600">Digital Architect</h1>
-          <p class="text-lg mb-4 text-justify md:text-left">
-            Experienced in full-stack development with expertise in MVC, OOP, and Agile methodologies. Proficient in Ruby on Rails, JavaScript, TypeScript, React, SQL, AWS, and Azure, I ensure reliable and efficient application development.
+    <section class="bg-blue-50 px-5 lg:px-20 py-16 lg:py-20" id="animation-section">
+      <div class="flex md:flex-row flex-col items-center mx-auto mt-10 container">
+        <div class="space-y-4 md:w-1/2 text-center sm:text-left">
+          <p class="text-gray-700 text-sm">Hi, I am Aralan and I am a</p>
+          <h1 class="mb-6 font-bold text-3xl text-blue-600 md:text-5xl">Software Engineer</h1>
+          <p class="mb-4 px-8 sm:px-0 text-gray-700 text-justify text-sm sm:text-left md:text-lg">
+            I am Full stack developer with expertise in building modern, scalable web applications for startups and businesses. I specialize in AWS, Azure, and .NET, helping solopreneurs and small businesses achieve rapid growth in the digital landscape through innovative solutions and robust architectures.
           </p>
-          <a href="https://calendly.com/arslanulfat8686" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
+          <a href="https://calendly.com/arslanulfat8686" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer">Let's discuss the project!</a>
         </div>
-        <div class="md:w-1/2 mt-8 md:mt-0">
-          <dotlottie-player src="https://lottie.host/324909d7-7874-4b6d-9b02-67ea5e8f36d1/jc5WWuszqj.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></dotlottie-player>
+        <div class="flex justify-center mt-8 md:mt-0 md:w-1/2">
+          <dotlottie-player id="lottie-animation" src="https://lottie.host/503fb3a8-07f9-4511-85db-a2e830e2b95d/6ESHR5nVno.lottie" background="transparent" speed="0.9" style="width: 100%; max-width: 400px; height: auto;" autoplay></dotlottie-player>
         </div>
       </div>
     </section>
 
-    <section class="py-16 lg:py-20 lg:px-20 px-10" id="portfolio">
-      <div class="container mx-auto">
-        <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-blue-600">My Portfolio</h2>
+    <section class="px-5 lg:px-20 py-16 lg:py-20" id="about">
+      <div class="mx-auto container">
+        <div class="mb-12 text-center">
+          <h2 class="font-bold text-3xl text-blue-600">About Me</h2>
+          <p class="text-lg">Discover my journey, skills, and what drives my passion for technology.</p>
+        </div>
+        <div class="flex md:flex-row flex-col items-stretch">
+          <div class="flex-1 p-6 md:w-1/2">
+            <div class="bg-white shadow-md p-6 rounded-lg h-full">
+              <h3 class="mb-4 font-bold text-xl">👤 Short Biography</h3>
+              <p class="text-gray-700">As a passionate software engineer, I thrive on solving complex problems and innovating solutions. My journey in tech began with a fascination for technology and its potential to transform lives.</p>
+            </div>
+          </div>
+          <div class="flex-1 p-6 md:w-1/2">
+            <div class="bg-white shadow-md p-6 rounded-lg h-full">
+              <h3 class="mt-6 mb-4 font-bold text-xl">🚀 Professional Journey</h3>
+              <p class="text-gray-700">With experience across startups and established companies, I have honed my skills in AWS, Azure, and .NET technologies. My diverse background allows me to adapt and excel in various environments.</p>
+            </div>
+          </div>
+          <div class="flex-1 p-6 md:w-1/2">
+            <div class="bg-white shadow-md p-6 rounded-lg h-full">
+              <h3 class="mt-6 mb-4 font-bold text-xl">🏆 Key Achievements</h3>
+              <ul class="pl-5 text-gray-700 list-disc">
+                <li>🌟 Successfully led the development of a high-traffic e-commerce platform.</li>
+                <li>⚙️ Implemented CI/CD pipelines, reducing deployment times by 30%.</li>
+                <li>🤝 Contributed to open-source projects, enhancing community collaboration.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue-50 px-10 lg:px-20 py-16 lg:py-20" id="portfolio">
+      <div class="mx-auto container">
+        <div class="mb-8 text-center">
+          <h2 class="font-bold text-3xl text-blue-600">My Portfolio</h2>
           <p class="text-lg">Explore my projects by category or technology.</p>
         </div>
         <div class="flex flex-wrap justify-center mb-8">
-          <button class="filter-btn bg-gray-200 text-gray-900 px-4 py-2 rounded-lg mx-2 my-2" data-filter="all">All</button>
-          <button class="filter-btn bg-gray-200 text-gray-900 px-4 py-2 rounded-lg mx-2 my-2" data-filter="web">Web Development</button>
-          <button class="filter-btn bg-gray-200 text-gray-900 px-4 py-2 rounded-lg mx-2 my-2" data-filter="mobile">Mobile Apps</button>
-          <button class="filter-btn bg-gray-200 text-gray-900 px-4 py-2 rounded-lg mx-2 my-2" data-filter="devops">DevOps</button>
+          <button class="bg-gray-200 mx-2 my-2 px-4 py-2 rounded-lg text-gray-900 filter-btn" data-filter="all">All</button>
+          <button class="bg-gray-200 mx-2 my-2 px-4 py-2 rounded-lg text-gray-900 filter-btn" data-filter="web">Web Development</button>
+          <button class="bg-gray-200 mx-2 my-2 px-4 py-2 rounded-lg text-gray-900 filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="bg-gray-200 mx-2 my-2 px-4 py-2 rounded-lg text-gray-900 filter-btn" data-filter="devops">DevOps</button>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-cards">
-          <div class="project-card bg-white p-6 rounded-lg shadow-md cursor-pointer" data-category="web">
-            <img src="./assets/images/truecar.jpg" alt="TrueCar Project" class="w-full h-60 object-cover mb-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">TrueCar</h3>
-            <p class="text-gray-600">Developed a comprehensive car pricing platform with real-time data integration and user-friendly interfaces.</p>
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="project-cards">
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="web">
+            <img src="./assets/images/truecar.jpg" alt="TrueCar Project" class="mb-4 rounded-lg w-full h-60 object-cover">
+            <div class="space-y-4">
+              <h3 class="mb-2 font-bold text-blue-600 text-xl">TrueCar</h3>
+              <p class="text-gray-600">Developed a comprehensive car pricing platform with real-time data integration and user-friendly interfaces.</p>
+              <a href="https://your-live-preview-link.com" 
+                class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Live Preview
+              </a>
+            </div>
           </div>
-          <div class="project-card bg-white p-6 rounded-lg shadow-md cursor-pointer" data-category="web">
-            <img src="./assets/images/parsley.jpg" alt="Parsley Project" class="w-full h-60 object-cover mb-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Parsley</h3>
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="web">
+            <img src="./assets/images/parsley.jpg" alt="Parsley Project" class="mb-4 rounded-lg w-full h-60 object-cover">
+          <div class="space-y-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-xl">Parsley</h3>
             <p class="text-gray-600">Built a robust health management system focusing on personalized care plans and seamless patient-doctor communication.</p>
+            <a href="https://your-live-preview-link.com" 
+              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              Live Preview
+            </a>
+          </div> 
           </div>
-          <div class="project-card bg-white p-6 rounded-lg shadow-md cursor-pointer" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="w-full h-60 object-cover mb-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Kinship</h3>
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="mobile">
+            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="mb-4 rounded-lg w-full h-60 object-cover">
+            <div class="space-y-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
             <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
+            <a href="https://your-live-preview-link.com" 
+              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              Live Preview
+            </a>
+            </div>
           </div>
-          <div class="project-card bg-white p-6 rounded-lg shadow-md cursor-pointer" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="w-full h-60 object-cover mb-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Kinship</h3>
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="mobile">
+            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="mb-4 rounded-lg w-full h-60 object-cover">
+            <div class="space-y-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
             <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
+            <a href="https://your-live-preview-link.com" 
+              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              Live Preview
+            </a>
+            </div>
           </div>
-          <div class="project-card bg-white p-6 rounded-lg shadow-md cursor-pointer" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="w-full h-60 object-cover mb-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Kinship</h3>
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="mobile">
+            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="mb-4 rounded-lg w-full h-60 object-cover">
+            <div class="space-y-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
             <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
+            <a href="https://your-live-preview-link.com" 
+              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              Live Preview
+            </a>
+            </div>
           </div>
-          <div class="project-card bg-white p-6 rounded-lg shadow-md cursor-pointer" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="w-full h-60 object-cover mb-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Kinship</h3>
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="mobile">
+            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="mb-4 rounded-lg w-full h-60 object-cover">
+            <div class="space-y-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
             <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
-          </div>
-          <div class="project-card bg-white p-6 rounded-lg shadow-md cursor-pointer" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="w-full h-60 object-cover mb-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Kinship</h3>
-            <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
+            <a href="https://your-live-preview-link.com" 
+              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              Live Preview
+            </a>
+            </div>
           </div>
         </div>
         <div class="flex justify-center mt-8" id="pagination-controls">
@@ -161,41 +238,41 @@
       </div>
     </section>
 
-    <section class="py-16 lg:py-20 lg:px-20 px-10 bg-blue-50" id="about">
-      <div class="container mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-blue-600">What I Do?</h2>
+    <section class="bg-blue-50 px-10 lg:px-20 py-16 lg:py-20" id="about">
+      <div class="mx-auto container">
+        <div class="mb-12 text-center">
+          <h2 class="font-bold text-3xl text-blue-600">What I Do?</h2>
           <p class="text-lg">Check out my services and skills.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
-            <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon" class="mb-4 mx-auto">
-            <h3 class="text-xl font-bold mb-2 text-blue-600 text-center">Website Development</h3>
-            <ul class="list-disc pl-5">
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer">
+            <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon" class="mx-auto mb-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-center text-xl">Website Development</h3>
+            <ul class="pl-5 list-disc">
               <li class="mb-2">I specialize in turning Figma and PSD designs into beautifully crafted, pixel-perfect websites.</li>
               <li class="mb-2">My focus is on delivering a smooth, accurate translation of designs into functional, high-quality code.</li>
             </ul>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
-            <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon" class="mb-4 mx-auto">
-            <h3 class="text-xl font-bold mb-2 text-blue-600 text-center">Mobile App Development</h3>
-            <ul class="list-disc pl-5">
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer">
+            <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon" class="mx-auto mb-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-center text-xl">Mobile App Development</h3>
+            <ul class="pl-5 list-disc">
               <li class="mb-2">With expertise in mobile app design and development, I create intuitive and functional applications.</li>
               <li class="mb-2">My focus on blending seamless design with robust performance.</li>
             </ul>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
-            <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web development icon" class="mb-4 mx-auto">
-            <h3 class="text-xl font-bold mb-2 text-blue-600 text-center">DevOps</h3>
-            <ul class="list-disc pl-5">
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer">
+            <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web development icon" class="mx-auto mb-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-center text-xl">DevOps</h3>
+            <ul class="pl-5 list-disc">
               <li class="mb-2">With expertise in DevOps, I excel at using AWS, Heroku, Jenkins, and CircleCI to optimize deployment pipelines.</li>
               <li class="mb-2">My focus is on ensuring seamless integration and delivery.</li>
             </ul>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
-            <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon" class="mb-4 mx-auto">
-            <h3 class="text-xl font-bold mb-2 text-blue-600 text-center">SEO</h3>
-            <ul class="list-disc pl-5">
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer">
+            <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon" class="mx-auto mb-4">
+            <h3 class="mb-2 font-bold text-blue-600 text-center text-xl">SEO</h3>
+            <ul class="pl-5 list-disc">
               <li class="mb-2">With SEO expertise, I specialize in off-page strategies and backlinking to boost site authority.</li>
               <li class="mb-2">My focus is on improving search engine rankings effectively.</li>
             </ul>
@@ -204,51 +281,51 @@
       </div>
     </section>
 
-    <section class="py-16 lg:py-20 lg:px-20 px-10" id="experience">
-      <div class="container mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-blue-600">My Experience</h2>
+    <section class="px-10 lg:px-20 py-16 lg:py-20" id="experience">
+      <div class="mx-auto container">
+        <div class="mb-12 text-center">
+          <h2 class="font-bold text-3xl text-blue-600">My Experience</h2>
           <p class="text-lg">Check out my Experience.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer">
             <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon" class="mb-4">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Senior Software Engineer</h3>
+            <h3 class="mb-2 font-bold text-blue-600 text-xl">Senior Software Engineer</h3>
             <p>Led the development of multiple impactful customer-facing projects as the go-to .Net, Ruby on Rails specialist, driving the creation of dynamic web applications that met clients' unique needs.</p>
             <p>Translated intricate programming requirements into seamless front-end website experiences, ensuring exceptional user interactions, while also effectively addressing intricate challenges in back-end server code to guarantee reliability and scalability.</p>
             <div class="flex flex-wrap mt-4">
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">.Net</span>
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">Ruby on Rails</span>
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">JavaScript</span>
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">SQL</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">.Net</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">Ruby on Rails</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">JavaScript</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">SQL</span>
             </div>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md cursor-pointer">
+          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer">
             <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon" class="mb-4">
-            <h3 class="text-xl font-bold mb-2 text-blue-600">Software Engineer</h3>
+            <h3 class="mb-2 font-bold text-blue-600 text-xl">Software Engineer</h3>
             <p>Participated in bi-weekly architecture discussions, facilitating successful implementation of 25+ new features.</p>
             <p>Improved code quality through systematic processes, reducing defects by 75% and enhancing maintainability by 50%.</p>
             <p>Streamlined deployment with CI/CD automation, reducing deployment time by 30% and enhancing release outcomes.</p>
             <div class="flex flex-wrap mt-4">
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">CI/CD</span>
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">Automation</span>
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">Code Quality</span>
-              <span class="bg-blue-100 text-blue-600 text-sm font-semibold px-2.5 py-0.5 rounded mb-2 mr-2">Feature Implementation</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">CI/CD</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">Automation</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">Code Quality</span>
+              <span class="bg-blue-100 mr-2 mb-2 px-2.5 py-0.5 rounded font-semibold text-blue-600 text-sm">Feature Implementation</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 bg-blue-50 lg:py-20 lg:px-20 px-10" id="contact">
-      <div class="container mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-blue-600">Let's work together.</h2>
+    <section class="bg-blue-50 px-10 lg:px-20 py-16 lg:py-20" id="contact">
+      <div class="mx-auto container">
+        <div class="mb-12 text-center">
+          <h2 class="font-bold text-3xl text-blue-600">Let's work together.</h2>
           <p class="text-lg">I bring rapid solutions to make the life of my clients easier. Have any questions? Reach out to me.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-300">
-            <h3 class="text-xl font-bold mb-4 text-blue-600">Just a finger tap away.</h3>
+        <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
+          <div class="bg-white shadow-md p-6 rounded-lg transform transition duration-300">
+            <h3 class="mb-4 font-bold text-blue-600 text-xl">Just a finger tap away.</h3>
             <div class="space-y-4">
               <div class="flex items-center space-x-4">
                 <img src="./assets/images/email-icon.svg" width="20" height="20" alt="Email icon" class="mr-2">
@@ -268,12 +345,12 @@
               </div>
             </div>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-300">
-            <h3 class="text-xl font-bold mb-4 text-blue-600">Order My Services.</h3>
+          <div class="bg-white shadow-md p-6 rounded-lg transform transition duration-300">
+            <h3 class="mb-4 font-bold text-blue-600 text-xl">Order My Services.</h3>
             <div class="space-y-4">
               <div class="flex items-center space-x-4">
                 <img src="./assets/images/fiverr.svg" alt="Fiverr icon" class="mr-2">
-                <a href="https://www.fiverr.com/arslan_511" target="_blank" class=" text-gray-600 hover:underline cursor-pointer">Order on Fiverr</a>
+                <a href="https://www.fiverr.com/arslan_511" target="_blank" class="text-gray-600 hover:underline cursor-pointer">Order on Fiverr</a>
               </div>
               <div class="flex items-center space-x-4">
                 <img src="./assets/images/upwork.svg" alt="Upwork icon" class="mr-2">
@@ -291,7 +368,7 @@
   </main>
 
   <footer class="bg-white py-4">
-    <div class="container mx-auto text-center">
+    <div class="mx-auto text-center container">
       <p class="text-gray-600">Share with your network.</p>
       <div class="flex justify-center space-x-4 mt-4">
         <a href="https://twitter.com/intent/tweet?url=https://arslan.pages.dev/&text=Check%20out%20this%20amazing%20website!" target="_blank" class="text-gray-600 hover:text-blue-600">
@@ -317,7 +394,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/main.js"></script>
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-  <a href="https://wa.me/+923101736110" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300 w-12 h-12 flex items-center justify-center" aria-label="Chat with us on WhatsApp">
+  <a href="https://wa.me/+923101736110" target="_blank" class="right-4 bottom-4 fixed flex justify-center items-center bg-green-500 hover:bg-green-600 shadow-lg p-3 rounded-full w-12 h-12 text-white transition duration-300" aria-label="Chat with us on WhatsApp">
     <ion-icon name="logo-whatsapp" size="large"></ion-icon>
   </a>
 </body>

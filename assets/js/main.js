@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 1; i <= totalPages; i++) {
       const button = document.createElement('button');
       button.textContent = i;
-      button.className = `px-4 py-2 mx-1 rounded-lg ${i === page ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-900'}`;
+      button.className = `px-4 py-2 mx-1 rounded-lg ${i === page ? 'bg-transparent border border-blue-600' : 'bg-gray-200 text-gray-900'}`;
       button.addEventListener('click', () => displayPage(i, filteredCards));
       paginationControls.appendChild(button);
     }
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function initialize() {
     const allButton = document.querySelector('.filter-btn[data-filter="all"]');
-    allButton.classList.add('bg-blue-600', 'text-white');
+    allButton.classList.add('bg-transparent', 'text-blue-600', 'border', 'border-blue-600');
     allButton.classList.remove('bg-gray-200', 'text-gray-900');
 
     const allCards = projectCards.slice();
@@ -68,11 +68,11 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', () => {
       const filter = button.getAttribute('data-filter');
 
-      filterButtons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+      filterButtons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-blue-600', 'border', 'border-blue-600'));
       filterButtons.forEach(btn => btn.classList.add('bg-gray-200', 'text-gray-900'));
 
-      button.classList.add('bg-blue-600', 'text-white');
-      button.classList.remove('bg-gray-200', 'text-gray-900');
+      button.classList.add('bg-transparent', 'text-blue-600', 'border', 'border-blue-600');
+      button.classList.remove('bg-gray-200', 'text-blue-600');
 
       const filteredCards = projectCards.filter(card => {
         return filter === 'all' || card.getAttribute('data-category') === filter;
@@ -84,4 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   initialize();
+
+  const animationSection = document.getElementById('animation-section');
+  animationSection.addEventListener('click', function() {
+    const lottiePlayer = document.getElementById('lottie-animation');
+    lottiePlayer.stop();
+    lottiePlayer.play();
+  });
 });
