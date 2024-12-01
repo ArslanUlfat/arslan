@@ -74,3 +74,31 @@ html {
   pointer-events: none; /* Prevent mouse events on the circle */
   transition: transform 0.1s ease; /* Smooth movement */
 }
+
+.stepper {
+  display: flex;
+  flex-direction: column;
+}
+.step {
+  border-left: 2px solid #3b82f6;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.step:last-child {
+  border-left: none;
+}
+.step-number {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -16px;
+}

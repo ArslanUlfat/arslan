@@ -108,33 +108,38 @@
       </div>
     </section>
 
-    <section class="px-5 lg:px-20 py-16 lg:py-20" id="about">
+    <section class="px-5 lg:px-20 py-16 lg:py-20 h-full" id="about">
       <div class="mx-auto container">
         <div class="mb-12 text-center">
           <h2 class="font-bold text-3xl text-blue-600">About Me</h2>
           <p class="text-lg">Discover my journey, skills, and what drives my passion for technology.</p>
         </div>
-        <div class="flex md:flex-row flex-col items-stretch">
-          <div class="flex-1 p-6 md:w-1/2">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h3 class="mb-4 font-bold text-xl">👤 Short Biography</h3>
-              <p class="text-gray-700">As a passionate software engineer, I thrive on solving complex problems and innovating solutions. My journey in tech began with a fascination for technology and its potential to transform lives.</p>
-            </div>
+        <div class="flex md:flex-row flex-col items-start">
+          <div class="flex-1 p-6">
+            <img src="./assets/images/arslan.svg" alt="Muhammad Arslan" class="rounded-lg w-full h-80">
+            <p class="text-center text-sm"> Muhammad Arslan </p>
           </div>
-          <div class="flex-1 p-6 md:w-1/2">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h3 class="mt-6 mb-4 font-bold text-xl">🚀 Professional Journey</h3>
-              <p class="text-gray-700">With experience across startups and established companies, I have honed my skills in AWS, Azure, and .NET technologies. My diverse background allows me to adapt and excel in various environments.</p>
-            </div>
-          </div>
-          <div class="flex-1 p-6 md:w-1/2">
-            <div class="bg-white shadow-md p-6 rounded-lg h-full">
-              <h3 class="mt-6 mb-4 font-bold text-xl">🏆 Key Achievements</h3>
-              <ul class="pl-5 text-gray-700 list-disc">
-                <li>🌟 Successfully led the development of a high-traffic e-commerce platform.</li>
-                <li>⚙️ Implemented CI/CD pipelines, reducing deployment times by 30%.</li>
-                <li>🤝 Contributed to open-source projects, enhancing community collaboration.</li>
-              </ul>
+          <div class="flex-1 p-6">
+            <div class="stepper">
+              <div class="active step">
+                <div class="step-number">1</div>
+                <h3 class="font-bold text-xl">👤 Short Biography</h3>
+                <p class="text-gray-700">As a passionate software engineer, I thrive on solving complex problems and innovating solutions. My journey in tech began with a fascination for technology and its potential to transform lives.</p>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <h3 class="font-bold text-xl">🚀 Professional Journey</h3>
+                <p class="text-gray-700">With experience across startups and established companies, I have honed my skills in AWS, Azure, and .NET technologies. My diverse background allows me to adapt and excel in various environments.</p>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <h3 class="font-bold text-xl">🏆 Key Achievements</h3>
+                <ul class="pl-5 text-gray-700 list-disc">
+                  <li>🌟 Successfully led the development of a high-traffic e-commerce platform.</li>
+                  <li>⚙️ Implemented CI/CD pipelines, reducing deployment times by 30%.</li>
+                  <li>🤝 Contributed to open-source projects, enhancing community collaboration.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -159,7 +164,7 @@
             <div class="space-y-4">
               <h3 class="mb-2 font-bold text-blue-600 text-xl">TrueCar</h3>
               <p class="text-gray-600">Developed a comprehensive car pricing platform with real-time data integration and user-friendly interfaces.</p>
-              <a href="https://your-live-preview-link.com" 
+              <a href="https://www.truecar.com/" 
                 class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
                 target="_blank" 
                 rel="noopener noreferrer">
@@ -172,7 +177,7 @@
           <div class="space-y-4">
             <h3 class="mb-2 font-bold text-blue-600 text-xl">Parsley</h3>
             <p class="text-gray-600">Built a robust health management system focusing on personalized care plans and seamless patient-doctor communication.</p>
-            <a href="https://your-live-preview-link.com" 
+            <a href="https://www.yourparsley.com/" 
               class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
               target="_blank" 
               rel="noopener noreferrer">
@@ -185,46 +190,7 @@
             <div class="space-y-4">
             <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
             <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
-            <a href="https://your-live-preview-link.com" 
-              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
-              target="_blank" 
-              rel="noopener noreferrer">
-              Live Preview
-            </a>
-            </div>
-          </div>
-          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="mb-4 rounded-lg w-full h-60 object-cover">
-            <div class="space-y-4">
-            <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
-            <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
-            <a href="https://your-live-preview-link.com" 
-              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
-              target="_blank" 
-              rel="noopener noreferrer">
-              Live Preview
-            </a>
-            </div>
-          </div>
-          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="mb-4 rounded-lg w-full h-60 object-cover">
-            <div class="space-y-4">
-            <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
-            <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
-            <a href="https://your-live-preview-link.com" 
-              class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
-              target="_blank" 
-              rel="noopener noreferrer">
-              Live Preview
-            </a>
-            </div>
-          </div>
-          <div class="bg-white shadow-md p-6 rounded-lg cursor-pointer project-card" data-category="mobile">
-            <img src="./assets/images/kinship.jpg" alt="Kinship Project" class="mb-4 rounded-lg w-full h-60 object-cover">
-            <div class="space-y-4">
-            <h3 class="mb-2 font-bold text-blue-600 text-xl">Kinship</h3>
-            <p class="text-gray-600">Integrated Twilio Chat and developed an AI-powered app for accurate disease diagnosis and communication.</p>
-            <a href="https://your-live-preview-link.com" 
+            <a href="https://www.kinship.com/" 
               class="inline-block bg-transparent hover:bg-blue-600 px-6 py-2 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 text-blue-600 hover:text-white transition duration-300 ease-in-out focus:outline-none" 
               target="_blank" 
               rel="noopener noreferrer">
@@ -238,7 +204,7 @@
       </div>
     </section>
 
-    <section class="bg-blue-50 px-10 lg:px-20 py-16 lg:py-20" id="about">
+    <section class="px-10 lg:px-20 py-16 lg:py-20" id="about">
       <div class="mx-auto container">
         <div class="mb-12 text-center">
           <h2 class="font-bold text-3xl text-blue-600">What I Do?</h2>
