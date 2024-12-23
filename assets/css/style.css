@@ -94,3 +94,72 @@ html {
   justify-content: center;
   left: -16px;
 }
+
+@media screen and (max-width: 768px) {
+  .project-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.project-grid {
+  margin: 0px auto 6rem;
+  display: grid;
+  max-width: calc(1280px + 2rem);
+  padding: 0px 1rem;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.project {
+  margin: 0px auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(43, 105, 251, 0.12);
+  box-shadow: rgba(43, 105, 251, 0.06) 0px 0px 1rem 1rem;
+  position: relative;
+}
+
+.project-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  color: rgb(10, 0, 27);
+  margin-top: 47%;
+  background: rgb(250, 254, 255);
+  box-shadow: rgb(250, 254, 255) 0px 0px 4rem 6rem;
+}
+
+.project-img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(43, 105, 251, 0.12);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.project-img, .project-text {
+  grid-area: 1 / 1 / -1 / -1;
+  position: relative;
+}
