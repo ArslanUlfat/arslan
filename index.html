@@ -62,12 +62,12 @@
     <!-- Loader End -->
 
     <!-- Header Start -->
-    <header id="header" class="header d-flex justify-content-between">
+    <header id="header" class="d-flex justify-content-between header">
 
       <!-- Navigation Menu Start -->
       <div class="header__navigation">
         <nav id="menu" class="menu">
-          <ul class="menu__list d-flex justify-content-start">
+          <ul class="d-flex justify-content-start menu__list">
             <li class="menu__item">
               <a class="menu__link btn" href="#home">
                 <span class="menu__caption">Home</span>
@@ -104,7 +104,7 @@
       <!-- Navigation Menu End -->
 
       <!-- Header Controls Start -->
-      <div class="header__controls d-flex justify-content-end">
+      <div class="d-flex justify-content-end header__controls">
         <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
         <a id="notify-trigger" class="header__trigger btn" href="mailto:arslanulfat8686@gmail.com?subject=Message%20from%20your%20site">
           <span class="trigger__caption">Let's Talk</span>
@@ -126,10 +126,10 @@
 
     <!-- Avatar Side Block Start -->
     <div id="avatar" class="avatar">
-      <div class="avatar__container d-flex flex-column justify-content-lg-between">
+      <div class="d-flex flex-column justify-content-lg-between avatar__container">
         <!-- image and logo -->
         <div class="avatar__block">
-          <div class="avatar__logo d-flex align-items-center">
+          <div class="d-flex align-items-center avatar__logo">
             <div class="logo__caption">
               <p>Muhammad<br>Arslan</p>
             </div>
@@ -155,7 +155,7 @@
         <!-- socials and CTA button -->
         <div class="avatar__block">
           <div class="avatar__socials">
-            <ul class="socials-square d-flex justify-content-between">
+            <ul class="d-flex justify-content-between socials-square">
               <li class="socials-square__item">
                 <a class="socials-square__link btn" href="https://github.com/ArslanUlfat" target="_blank"><i class="ph-bold ph-github-logo"></i></a>
               </li>
@@ -194,8 +194,8 @@
         <section id="home" class="main intro">
 
           <!-- Headline Start -->
-          <div id="headline" class="headline d-flex align-items-start flex-column" data-speed="1">
-            <p class="headline__subtitle animate-headline">
+          <div id="headline" class="d-flex flex-column align-items-start headline" data-speed="1">
+            <p class="animate-headline headline__subtitle">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
                 <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
                   C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
@@ -203,7 +203,7 @@
               </svg>
               <span>Let's meet!</span>
             </p>
-            <h1 class="headline__title animate-headline">I'm Arslan<br>Python and ROR Engineer.</h1>
+            <h1 class="animate-headline headline__title">I'm Arslan<br>Python and ROR Engineer.</h1>
           </div>
           <!-- Headline End -->
 
@@ -238,8 +238,8 @@
         <section id="portfolio" class="inner inner-first portfolio">
 
           <!-- Content Block - H2 Section Title Start -->
-          <div class="content__block section-grid-title">
-            <p class="h2__subtitle animate-in-up">
+          <div class="section-grid-title content__block">
+            <p class="animate-in-up h2__subtitle">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
                 <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
                   C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
@@ -247,23 +247,23 @@
               </svg>
               <span>Portfolio</span>
             </p>
-            <h2 class="h2__title animate-in-up">Check out my featured projects</h2>
+            <h2 class="animate-in-up h2__title">Check out my featured projects</h2>
           </div>
           <!-- Content Block - H2 Section Title End -->
 
           <!-- Content Block - Works Gallery Start -->
-          <div class="content__block grid-block">
-            <div class="container-fluid px-0 inner__gallery">
-              <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          <div class="grid-block content__block">
+            <div class="px-0 container-fluid inner__gallery">
+              <div class="my-gallery row gx-0" itemscope itemtype="http://schema.org/ImageGallery">
     
                 <!-- Works Gallery Single Item Start -->
-                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <figure class="grid-item animate-card-2 col-12 col-md-6 gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="./img/works/kinship.png" data-image="./img/works/kinship.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
                     <img src="./img/works/kinship.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
                   </a>
                   <figcaption class="gallery__descr" itemprop="caption description">
                     <h5>Kinship</h5>
-                    <div class="card__tags d-flex flex-wrap">
+                    <div class="d-flex flex-wrap card__tags">
                       <span class="rounded-tag opposite">RoR</span>
                       <span class="rounded-tag opposite">React Native</span>
                       <span class="rounded-tag opposite">Twilio</span>
@@ -274,13 +274,13 @@
                 <!-- Works Gallery Single Item End -->
     
                 <!-- Works Gallery Single Item Start -->
-                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <figure class="grid-item animate-card-2 col-12 col-md-6 gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="./img/works/airluum.png" data-image="./img/works/airluum.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
                     <img src="./img/works/airluum.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
                   </a>
                   <figcaption class="gallery__descr opposite" itemprop="caption description">
                     <h5 class="opposite">Airluum</h5>
-                    <div class="card__tags d-flex flex-wrap">
+                    <div class="d-flex flex-wrap card__tags">
                       <span class="rounded-tag">Python</span>
                       <span class="rounded-tag">Open AI</span>
                       <span class="rounded-tag">React Native</span>
@@ -291,13 +291,13 @@
                 <!-- Works Gallery Single Item End -->
     
                 <!-- Works Gallery Single Item Start -->
-                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <figure class="grid-item animate-card-2 col-12 col-md-6 gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="./img/works/rescale.png" data-image="./img/works/rescale.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
                     <img src="./img/works/rescale.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
                   </a>
                   <figcaption class="gallery__descr opposite" itemprop="caption description">
                     <h5 class="opposite">Rescale</h5>
-                    <div class="card__tags d-flex flex-wrap">
+                    <div class="d-flex flex-wrap card__tags">
                       <span class="rounded-tag">RoR</span>
                       <span class="rounded-tag">ViewComponents</span>
                       <span class="rounded-tag">Figma</span>
@@ -308,13 +308,13 @@
                 <!-- Works Gallery Single Item End -->
     
                 <!-- Works Gallery Single Item Start -->
-                <!-- <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <!-- <figure class="grid-item animate-card-2 col-12 col-md-6 gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="./img/works/parsley.png" data-image="./img/works/parsley.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
                     <img src="./img/works/parsley.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
                   </a>
-                  <figcaption class="gallery__descr " itemprop="caption description">
+                  <figcaption class="gallery__descr" itemprop="caption description">
                     <h5>Parsley</h5>
-                    <div class="card__tags d-flex flex-wrap">
+                    <div class="d-flex flex-wrap card__tags">
                       <span class="rounded-tag opposite">Rails</span>
                       <span class="rounded-tag opposite">Perl</span>
                       <span class="rounded-tag opposite">SQL</span>
@@ -338,8 +338,8 @@
         <section id="about" class="inner about">
 
           <!-- Content Block - H2 Section Title Start -->
-          <div class="content__block section-grid-title">
-            <p class="h2__subtitle animate-in-up">
+          <div class="section-grid-title content__block">
+            <p class="animate-in-up h2__subtitle">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
                 <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
                   C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
@@ -347,29 +347,29 @@
               </svg>
               <span>About Me</span>
             </p>
-            <h2 class="h2__title animate-in-up">Turning complex problems into simple design</h2>
+            <h2 class="animate-in-up h2__title">Turning complex problems into simple design</h2>
           </div>
           <!-- Content Block - H2 Section Title End -->
 
           <!-- Content Block - Achievements Start -->
-          <div class="content__block grid-block">
-            <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+          <div class="grid-block content__block">
+            <div class="d-flex flex-column flex-md-row align-items-md-stretch achievements">
               <!-- achievements single item -->
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="d-flex flex-column grid-item animate-card-3 achievements__item">
                 <div class="achievements__card">
                   <p class="achievements__number">3+</p>
                   <p class="achievements__descr">Happy clients</p>
                 </div>
               </div>
               <!-- achievements single item -->
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="d-flex flex-column grid-item animate-card-3 achievements__item">
                 <div class="achievements__card">
-                  <p class="achievements__number">3+</p>
+                  <p class="achievements__number">5+</p>
                   <p class="achievements__descr">Years of experience</p>
                 </div>
               </div>
               <!-- achievements single item -->
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="d-flex flex-column grid-item animate-card-3 achievements__item">
                 <div class="achievements__card">
                   <p class="achievements__number">5+</p>
                   <p class="achievements__descr">Projects done</p>
@@ -380,39 +380,39 @@
           <!-- Content Block - Achievements End -->
 
           <!-- Content Block - About Me Data Start -->
-          <div class="content__block grid-block block-large">
-            <div class="container-fluid p-0">
-              <div class="row g-0 justify-content-between">
+          <div class="block-large grid-block content__block">
+            <div class="p-0 container-fluid">
+              <div class="justify-content-between row g-0">
                 
                 <!-- About Me Description Start -->
-                <div class="col-12 col-xl-8 grid-item about-descr">
-                  <p class="about-descr__text animate-in-up">
+                <div class="grid-item col-12 col-xl-8 about-descr">
+                  <p class="animate-in-up about-descr__text">
                     I'm a Software Engineer with over 3 years of experience specializing in web development using Ruby on Rails, Python, and AWS. I focus on building scalable, high-performance web applications and APIs. With a strong foundation in backend development and cloud integration, I create reliable solutions that meet business needs while maintaining clean and efficient code.
                   </p>
                 </div>
                 <!-- About Me Description End -->
       
                 <!-- About Me Information Start -->
-                <div class="col-12 col-xl-4 grid-item about-info">
-                  <div class="about-info__item animate-in-up">
+                <div class="grid-item col-12 col-xl-4 about-info">
+                  <div class="animate-in-up about-info__item">
                     <h6>
                       <small class="top">Name</small>
                       Muhammad Arslan
                     </h6>
                   </div>
-                  <div class="about-info__item animate-in-up">
+                  <div class="animate-in-up about-info__item">
                     <h6>
                       <small class="top">Phone</small>
                       <a class="text-link-bold" href="tel:+923101736110">+92310-1736110</a>
                     </h6>
                   </div>
-                  <div class="about-info__item animate-in-up">
+                  <div class="animate-in-up about-info__item">
                     <h6>
                       <small class="top">Email</small>
                       <a class="text-link-bold" href="mailto:arslanulfat8686@gmail.com?subject=Message%20from%20your%20site">arslanulfat8686@gmail.com</a>
                     </h6>
                   </div>
-                  <div class="about-info__item animate-in-up">
+                  <div class="animate-in-up about-info__item">
                     <h6>
                       <small class="top">Location</small>
                       <a class="text-link-bold" href="https://www.google.com/maps/place/Honda+Point/@31.4934304,74.4130256,17z/data=!3m1!4b1!4m6!3m5!1s0x39190f4fe606ba31:0x2dd94708ad853a9d!8m2!3d31.4934259!4d74.4178965!16s%2Fg%2F11r9nhcfz?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lahore, Pakistan</a>
@@ -427,75 +427,75 @@
           <!-- Content Block - About Me Data End -->
 
           <!-- Content Block - Services Start -->
-          <div class="content__block grid-block">
-            <div class="container-fluid p-0">
-              <div class="row g-0 align-items-stretch cards">
+          <div class="grid-block content__block">
+            <div class="p-0 container-fluid">
+              <div class="align-items-stretch row g-0 cards">
                 <!-- services cards grid single item -->
-                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                  <div class="cards__card d-flex flex-column">
+                <div class="grid-item animate-card-2 col-12 col-md-6 cards__item">
+                  <div class="d-flex flex-column cards__card">
                     <div class="cards__descr">
-                      <h4 class="cards__title animate-in-up">Frontend<br>development</h4>
-                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <h4 class="animate-in-up cards__title">Frontend<br>development</h4>
+                      <div class="d-flex flex-wrap animate-in-up cards__tags">
                         <span class="rounded-tag tag-outline">React.Js</span>
                         <span class="rounded-tag tag-outline">Figma</span>
                         <span class="rounded-tag tag-outline">TypeScript</span>
                       </div>
-                      <p class="small cards__text animate-in-up">I specialize in React, TypeScript, and JavaScript, creating responsive, high-performance web applications with dynamic, user-friendly interfaces and seamless experiences.</p>
+                      <p class="animate-in-up small cards__text">I specialize in React, TypeScript, and JavaScript, creating responsive, high-performance web applications with dynamic, user-friendly interfaces and seamless experiences.</p>
                     </div>
-                    <div class="cards__image d-flex animate-in-up">
+                    <div class="d-flex animate-in-up cards__image">
                       <img src="./img/services/front-end.webp" alt="Service/Feature Image">
                     </div>
                   </div>
                 </div>
                 <!-- services grid cards single item -->
-                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                  <div class="cards__card d-flex flex-column">
+                <div class="grid-item animate-card-2 col-12 col-md-6 cards__item">
+                  <div class="d-flex flex-column cards__card">
                     <div class="cards__descr">
-                      <h4 class="cards__title animate-in-up">Backend <br>development</h4>
-                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <h4 class="animate-in-up cards__title">Backend <br>development</h4>
+                      <div class="d-flex flex-wrap animate-in-up cards__tags">
                         <span class="rounded-tag tag-outline">Ruby</span>
                         <span class="rounded-tag tag-outline">Python</span>
                         <span class="rounded-tag tag-outline">AWS</span>
                       </div>
-                      <p class="small cards__text animate-in-up">I specialize in Ruby on Rails and Python, building scalable systems and robust APIs to ensure seamless backend functionality and architecture.</p>
+                      <p class="animate-in-up small cards__text">I specialize in Ruby on Rails and Python, building scalable systems and robust APIs to ensure seamless backend functionality and architecture.</p>
                     </div>
-                    <div class="cards__image d-flex animate-in-up">
+                    <div class="d-flex animate-in-up cards__image">
                       <img src="./img/services/ideation.webp" alt="Service/Feature Image">
                     </div>
                   </div>
                 </div>
                 <!-- services grid cards single item -->
-                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                  <div class="cards__card d-flex flex-column">
+                <div class="grid-item animate-card-2 col-12 col-md-6 cards__item">
+                  <div class="d-flex flex-column cards__card">
                     <div class="cards__descr">
-                      <h4 class="cards__title animate-in-up">Quality Assurance and Testing</h4>
-                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <h4 class="animate-in-up cards__title">Quality Assurance and Testing</h4>
+                      <div class="d-flex flex-wrap animate-in-up cards__tags">
                         <span class="rounded-tag tag-outline">Manual</span>
                         <span class="rounded-tag tag-outline">Automatic</span>
                         <span class="rounded-tag tag-outline">Rspec</span>
                         <span class="rounded-tag tag-outline">Jest</span>
 
                       </div>
-                      <p class="small cards__text animate-in-up">I have experience in Quality Assurance and Testing, ensuring robust performance through test cases, automated testing, and maintaining high-quality standards.</p>
+                      <p class="animate-in-up small cards__text">I have experience in Quality Assurance and Testing, ensuring robust performance through test cases, automated testing, and maintaining high-quality standards.</p>
                     </div>
-                    <div class="cards__image d-flex">
+                    <div class="d-flex cards__image">
                       <img src="./img/services/qa.webp" alt="Service/Feature Image">
                     </div>
                   </div>
                 </div>
                 <!-- services grid cards single item -->
-                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                  <div class="cards__card d-flex flex-column">
+                <div class="grid-item animate-card-2 col-12 col-md-6 cards__item">
+                  <div class="d-flex flex-column cards__card">
                     <div class="cards__descr">
-                      <h4 class="cards__title animate-in-up">Launch and<br>Support</h4>
-                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <h4 class="animate-in-up cards__title">Launch and<br>Support</h4>
+                      <div class="d-flex flex-wrap animate-in-up cards__tags">
                         <span class="rounded-tag tag-outline">Deployments</span>
                         <span class="rounded-tag tag-outline">Bug fixing</span>
                         <span class="rounded-tag tag-outline">Maintenance</span>
                       </div>
-                      <p class="small cards__text animate-in-up">I have experience in Maintenance and Support, optimizing performance, troubleshooting issues, managing updates, and ensuring seamless application functionality and user experiences.</p>
+                      <p class="animate-in-up small cards__text">I have experience in Maintenance and Support, optimizing performance, troubleshooting issues, managing updates, and ensuring seamless application functionality and user experiences.</p>
                     </div>
-                    <div class="cards__image d-flex animate-in-up">
+                    <div class="d-flex animate-in-up cards__image">
                       <img src="./img/services/deployment.webp" alt="Service/Feature Image">
                     </div>
                   </div>
@@ -513,8 +513,8 @@
         <section id="resume" class="inner resume">
 
           <!-- Content Block - H2 Section Title Start -->
-          <div class="content__block block-large">
-            <p class="h2__subtitle animate-in-up">
+          <div class="block-large content__block">
+            <p class="animate-in-up h2__subtitle">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
                 <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
                   C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
@@ -522,70 +522,70 @@
               </svg>
               <span>Education</span>
             </p>
-            <h2 class="h2__title animate-in-up">Education and practical experience</h2>
-            <p class="h2__text animate-in-up">
+            <h2 class="animate-in-up h2__title">Education and practical experience</h2>
+            <p class="animate-in-up h2__text">
               I earned my Bachelor of Science in Computer Engineering from the prestigious University of Engineering and Technology (UET), Lahore, where I cultivated a passion for software development, particularly in web applications. My academic journey provided a strong foundation in programming and problem-solving.
              </p>
-             <p class="h2__text animate-in-up">
+             <p class="animate-in-up h2__text">
               After graduation, I launched my career in web development, specializing in Ruby on Rails and Python to build robust applications. I later expanded into modern technologies like React.js, enabling me to create dynamic and user-friendly interfaces while delivering impactful solutions.
              </p>
           </div>
           <!-- Content Block - H2 Section Title End -->
 
           <!-- Content Block - Experience Start -->
-          <div class="content__block block-large">
+          <div class="block-large content__block">
 
             <!-- H3 Block Start -->
             <div class="section-h3">
-              <h3 class="h3__title animate-in-up">Work experience</h3>
+              <h3 class="animate-in-up h3__title">Work experience</h3>
             </div>
             <!-- H3 Block End -->
 
             <!-- Experience Lines Start -->
-            <div class="container-fluid p-0 resume-lines">
+            <div class="p-0 container-fluid resume-lines">
               <!-- experience single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
+              <div class="animate-in-up row g-0 resume-lines__item">
                 <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2022 - 2023</span>
+                  <span class="animate-in-up resume-lines__date">2022 - 2023</span>
                 </div>
                 <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Associate Software Engineer</h5>
-                  <p class="resume-lines__source animate-in-up">at 
+                  <h5 class="animate-in-up resume-lines__title">Associate Software Engineer</h5>
+                  <p class="animate-in-up resume-lines__source">at 
                     <a href="#0" class="text-link-bold" target="_blank">Devsinc</a>
                   </p>
                 </div>
                 <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">As an Associate Software Engineer at Devsinc, I mastered Ruby on Rails and React.js, enhancing my full-stack development skills. This experience fostered both my professional growth and technical expertise</p>
+                  <p class="animate-in-up small resume-lines__descr">As an Associate Software Engineer at Devsinc, I mastered Ruby on Rails and React.js, enhancing my full-stack development skills. This experience fostered both my professional growth and technical expertise</p>
                 </div>
               </div>
               <!-- experience single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
+              <div class="animate-in-up row g-0 resume-lines__item">
                 <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2023 - 2024</span>
+                  <span class="animate-in-up resume-lines__date">2023 - 2024</span>
                 </div>
                 <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Software Engineer</h5>
-                  <p class="resume-lines__source animate-in-up">at
+                  <h5 class="animate-in-up resume-lines__title">Software Engineer</h5>
+                  <p class="animate-in-up resume-lines__source">at
                     <a href="#0" class="text-link-bold" target="_blank">Devsinc</a>
                   </p>
                 </div>
                 <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">During my time at Devsinc as a Software Engineer, I honed my skills in Python and React Native, gaining hands-on experience in building scalable backend systems and dynamic mobile applications.</p>
+                  <p class="animate-in-up small resume-lines__descr">During my time at Devsinc as a Software Engineer, I honed my skills in Python and React Native, gaining hands-on experience in building scalable backend systems and dynamic mobile applications.</p>
                 </div>
               </div>
               <!-- experience single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
+              <div class="animate-in-up row g-0 resume-lines__item">
                 <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2024 - now</span>
+                  <span class="animate-in-up resume-lines__date">2024 - now</span>
                 </div>
                 <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Python Engineer</h5>
-                  <p class="resume-lines__source animate-in-up">at
+                  <h5 class="animate-in-up resume-lines__title">Python Engineer</h5>
+                  <p class="animate-in-up resume-lines__source">at
                     <a href="#0" class="text-link-bold" target="_blank">Synares Systems</a>
                   </p>
                 </div>
                 <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">At Synares System, I had the opportunity to explore the cutting-edge fields of Artificial Intelligence, Prompt Engineering, and Neo4j. I worked on developing intelligent systems and leveraging graph databases to model complex relationships effectively.</p>
+                  <p class="animate-in-up small resume-lines__descr">At Synares System, I had the opportunity to explore the cutting-edge fields of Artificial Intelligence, Prompt Engineering, and Neo4j. I worked on developing intelligent systems and leveraging graph databases to model complex relationships effectively.</p>
                 </div>
               </div>
             </div>
@@ -595,29 +595,29 @@
           <!-- Content Block - Experience End -->
 
           <!-- Content Block - Education Start -->
-          <div class="content__block block-large">
+          <div class="block-large content__block">
 
             <!-- H3 Block Start -->
             <div class="section-h3">
-              <h3 class="h3__title animate-in-up">My education</h3>
+              <h3 class="animate-in-up h3__title">My education</h3>
             </div>
             <!-- H3 Block End -->
 
             <!-- Education Lines Start -->
-            <div class="container-fluid p-0 resume-lines">
+            <div class="p-0 container-fluid resume-lines">
               <!-- education single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
+              <div class="animate-in-up row g-0 resume-lines__item">
                 <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2018 - 2022</span>
+                  <span class="animate-in-up resume-lines__date">2018 - 2022</span>
                 </div>
                 <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Computer Sciecne</h5>
-                  <p class="resume-lines__source animate-in-up">Bachelors from
+                  <h5 class="animate-in-up resume-lines__title">Computer Sciecne</h5>
+                  <p class="animate-in-up resume-lines__source">Bachelors from
                     <a href="#0" class="text-link-bold" target="_blank">University of Engineering & Technology, Lahore</a>
                   </p>
                 </div>
                 <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">I earned my Bachelor's in Computer Science from UET Lahore, gaining expertise in C/C++, OOP, databases, and Arduino. My passion for AI and OpenCV drove me to explore neural networks and computer vision, shaping my interest in intelligent systems.</p>
+                  <p class="animate-in-up small resume-lines__descr">I earned my Bachelor's in Computer Science from UET Lahore, gaining expertise in C/C++, OOP, databases, and Arduino. My passion for AI and OpenCV drove me to explore neural networks and computer vision, shaping my interest in intelligent systems.</p>
                 </div>
               </div>
             </div>
@@ -628,35 +628,35 @@
 
           <!-- Content Block - H3 Block Start -->
           <div class="content__block">
-            <div class="section-h3 section-h3-grid">
-              <h3 class="h3__title animate-in-up">My favourite tools</h3>
+            <div class="section-h3-grid section-h3">
+              <h3 class="animate-in-up h3__title">My favourite tools</h3>
             </div>
           </div>
           <!-- Content Block - H3 Block End -->
 
           <!-- Content Block - Tools List Start -->
-          <div class="content__block grid-block block-large">
+          <div class="block-large grid-block content__block">
             <!-- Tools List Start -->
-            <div class="tools-cards d-flex justify-content-start flex-wrap">
+            <div class="d-flex flex-wrap justify-content-start tools-cards">
               <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <div class="d-flex grid-item-s animate-card-5 tools-cards__item">
                 <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-figma.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">Figma</h6>
+                  <img class="animate-in-up tools-cards__icon" src="img/icons/icon-figma.svg" alt="Tools Icon">
+                  <h6 class="animate-in-up tools-cards__caption">Figma</h6>
                 </div>
               </div>
               <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <div class="d-flex grid-item-s animate-card-5 tools-cards__item">
                 <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-html.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">HTML5</h6>
+                  <img class="animate-in-up tools-cards__icon" src="img/icons/icon-html.svg" alt="Tools Icon">
+                  <h6 class="animate-in-up tools-cards__caption">HTML5</h6>
                 </div>
               </div>
               <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <div class="d-flex grid-item-s animate-card-5 tools-cards__item">
                 <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-css.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">CSS3</h6>
+                  <img class="animate-in-up tools-cards__icon" src="img/icons/icon-css.svg" alt="Tools Icon">
+                  <h6 class="animate-in-up tools-cards__caption">CSS3</h6>
                 </div>
               </div>
               <!-- tools simgle item -->
@@ -667,7 +667,7 @@
 
           <!-- Content Block - H2 Block Start -->
           <div class="content__block section-title">
-            <p class="h2__subtitle animate-in-up">
+            <p class="animate-in-up h2__subtitle">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
                 <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
                   C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
@@ -675,7 +675,7 @@
               </svg>
               <span>Testimonials</span>
             </p>
-            <h2 class="h2__title animate-in-up">Clients say about me</h2>
+            <h2 class="animate-in-up h2__title">Clients say about me</h2>
           </div>
           <!-- Content Block - H2 Block End -->
 
@@ -690,17 +690,17 @@
                 <div class="swiper-wrapper">
                   <!-- slides -->
                   <div class="swiper-slide">
-                    <div class="testimonials-card animate-in-up">
-                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                    <div class="animate-in-up testimonials-card">
+                      <div class="d-flex animate-in-up testimonials-card__tauthor">
                         <div class="tauthor__avatar">
                           <img src="./img/matthew.png" alt="Review Author">
                         </div>
-                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column justify-content-center tauthor__info">
                           <p class="tauthor__name">Matthew Kaliara</p>
                           <p class="tauthor__position">CEO at 
                             <a href="#0" class="text-link-bold" target="_blank">Rescale</a>
                           </p>
-                          <div class="tauthor__rating d-flex">
+                          <div class="d-flex tauthor__rating">
                             <i class="ph-fill ph-star"></i>
                             <i class="ph-fill ph-star"></i>
                             <i class="ph-fill ph-star"></i>
@@ -709,27 +709,27 @@
                           </div>
                         </div>
                       </div>
-                      <div class="testimonials-card__descr animate-in-up">
+                      <div class="animate-in-up testimonials-card__descr">
                         <p>Great work on turning figma into a real product. I was impressed by the speed and quality of the work.</p>
                       </div>
-                      <div class="testimonials-card__btnholder animate-in-up">
-                        <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="#0">
+                      <div class="animate-in-up testimonials-card__btnholder">
+                        <a class="slide-right btn mobile-vertical btn-line btn-transparent" href="#0">
                           <span class="btn-caption">Project Page</span>
-                          <i class="ph-bold ph-arrow-right"></i>
+                          <i class="ph-arrow-right ph-bold"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- navigation buttons -->
-                <div class="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
-                  <a class="btn btn-square btn-square-s btn-outline slide-left" href="#0">
-                    <i class="ph-bold ph-caret-left"></i>
+                <div class="animate-in-up swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev">
+                  <a class="slide-left btn-outline btn btn-square btn-square-s" href="#0">
+                    <i class="ph-caret-left ph-bold"></i>
                   </a>
                 </div>
-                <div class="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
-                  <a class="btn btn-square btn-square-s btn-outline slide-right" href="#0">
-                    <i class="ph-bold ph-caret-right"></i>
+                <div class="animate-in-up swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next">
+                  <a class="slide-right btn-outline btn btn-square btn-square-s" href="#0">
+                    <i class="ph-caret-right ph-bold"></i>
                   </a>
                 </div>
               </div>
@@ -747,7 +747,7 @@
 
           <!-- Content Block - H2 Section Title Start -->
           <div class="content__block section-title">
-            <p class="h2__subtitle  animate-in-up">
+            <p class="animate-in-up h2__subtitle">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
                 <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
                   C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
@@ -755,16 +755,16 @@
               </svg>
               <span>Contact</span>
             </p>
-            <h2 class="h2__title  animate-in-up">Let's make something awesome together!</h2>
+            <h2 class="animate-in-up h2__title">Let's make something awesome together!</h2>
           </div>
           <!-- Content Block - H2 Section Title End -->
 
           <!-- Content Block - Contact Form Start -->
-          <div class="content__block grid-block block-grid-large">
+          <div class="block-grid-large grid-block content__block">
             <div class="form-container">
 
               <!-- Reply Messages Start -->
-              <div class="form__reply centered text-center">
+              <div class="text-center form__reply centered">
                 <i class="ph-bold ph-smiley reply__icon"></i>
                 <p class="reply__title">Done!</p>
                 <span class="reply__text">Thanks for your message. I'll get back as soon as possible.</span>
@@ -778,24 +778,24 @@
                 <input type="hidden" name="admin_email" value="arslanulfat8686@gmail.com">
                 <input type="hidden" name="form_subject" value="Message from arslan.pages.dev">
                 <!-- END Hidden Required Fields-->
-                <div class="container-fluid p-0">
+                <div class="p-0 container-fluid">
                   <div class="row gx-0">
-                    <div class="col-12 col-md-6 form__item animate-in-up">
+                    <div class="animate-in-up col-12 col-md-6 form__item">
                       <input type="text" name="Name" placeholder="Your Name*" required>
                     </div>
-                    <div class="col-12 col-md-6 form__item animate-in-up">
+                    <div class="animate-in-up col-12 col-md-6 form__item">
                       <input type="text" name="Company" placeholder="Company Name">
                     </div>
-                    <div class="col-12 col-md-6 form__item animate-in-up">
+                    <div class="animate-in-up col-12 col-md-6 form__item">
                       <input type="email" name="E-mail" placeholder="Email Adress*" required>
                     </div>
-                    <div class="col-12 col-md-6 form__item animate-in-up">
+                    <div class="animate-in-up col-12 col-md-6 form__item">
                       <input type="tel" name="Phone" placeholder="Phone Number*" required>
                     </div>
-                    <div class="col-12 form__item animate-in-up">
+                    <div class="animate-in-up col-12 form__item">
                       <textarea name="Message" placeholder="A Few Words*" required></textarea>
                     </div>
-                    <div class="col-12 form__item animate-in-up">
+                    <div class="animate-in-up col-12 form__item">
                       <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
                         <span class="btn-caption">Send Message</span>
                         <i class="ph-bold ph-paper-plane-tilt"></i>
@@ -811,36 +811,36 @@
           <!-- Content Block - Contact Form End -->
 
           <!-- Content Block - Socials Cards Start -->
-          <div class="content__block grid-block">
-            <div class="socials-cards d-flex justify-content-start flex-wrap">
+          <div class="grid-block content__block">
+            <div class="d-flex flex-wrap justify-content-start socials-cards">
               <!-- socials item -->
-               <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+               <div class="d-flex grid-item-s animate-card-5 socials-cards__item">
                 <div class="socials-cards__card">
                   <i class="ph-bold ph-github-logo"></i>
                   <a class="socials-cards__link" href="https://github.com/ArslanUlfat" target="_blank"></a>
                 </div>
               </div>
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="d-flex grid-item-s animate-card-5 socials-cards__item">
                 <div class="socials-cards__card">
                   <i class="ph-bold ph-linkedin-logo"></i>
                   <a class="socials-cards__link" href="https://www.linkedin.com/in/muhammad-arslan-software-engineer/" target="_blank"></a>
                 </div>
               </div>
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="d-flex grid-item-s animate-card-5 socials-cards__item">
                 <div class="socials-cards__card">
                   <i class="ph-bold ph-phone-call"></i>
                   <a class="socials-cards__link" href="tel:+923101736110" target="_blank"></a>
                 </div>
               </div>
               <!-- socials item -->
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="d-flex grid-item-s animate-card-5 socials-cards__item">
                 <div class="socials-cards__card">
                   <i class="ph-bold ph-whatsapp-logo"></i>
                   <a class="socials-cards__link" href="https://wa.me/+923101736110" target="_blank"></a>
                 </div>
               </div>
               <!-- socials item -->
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="d-flex grid-item-s animate-card-5 socials-cards__item">
                 <div class="socials-cards__card">
                   <i class="ph-bold ph-slack-logo"></i>
                   <a class="socials-cards__link" href="" target="_blank"></a>
@@ -853,7 +853,7 @@
           <!-- Content Block - Teaser Start -->
           <div class="content__block">
             <div class="teaser">
-              <p class="teaser__text animate-in-up">Want to know more about me, tell me 
+              <p class="animate-in-up teaser__text">Want to know more about me, tell me 
                 about your project or just to say hello? 
                 <a class="text-link-bold" href="mailto:arslanulfat8686@gmail.com?subject=Message%20from%20your%20site" style="text-decoration: underline; color:#8260e1">Drop me a line</a> 
                 and I'll get back 
@@ -865,26 +865,26 @@
 
           <!-- Content Block - Contact Data Start -->
           <div class="content__block">
-            <div class="container-fluid p-0 contact-lines animate-in-up">
+            <div class="p-0 animate-in-up container-fluid contact-lines">
               <div class="row g-0 contact-lines__item">
                 <!-- data item -->
                 <div class="col-12 col-md-4 contact-lines__data">
-                  <p class="contact-lines__title animate-in-up">Location</p>
-                  <p class="contact-lines__text animate-in-up">
+                  <p class="animate-in-up contact-lines__title">Location</p>
+                  <p class="animate-in-up contact-lines__text">
                     <a class="text-link-bold" href="https://www.google.com/maps/place/Honda+Point/@31.4934304,74.4130256,17z/data=!3m1!4b1!4m6!3m5!1s0x39190f4fe606ba31:0x2dd94708ad853a9d!8m2!3d31.4934259!4d74.4178965!16s%2Fg%2F11r9nhcfz?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lahore, Pakistan</a>
                   </p>
                 </div>
                 <!-- data item -->
                 <div class="col-12 col-md-4 contact-lines__data">
-                  <p class="contact-lines__title animate-in-up">Phone</p>
-                  <p class="contact-lines__text animate-in-up">
+                  <p class="animate-in-up contact-lines__title">Phone</p>
+                  <p class="animate-in-up contact-lines__text">
                     <a class="text-link-bold" href="tel:+923101736110">+92310-1736110</a>
                   </p>
                 </div>
                 <!-- data item -->
                 <div class="col-12 col-md-4 contact-lines__data">
-                  <p class="contact-lines__title animate-in-up">Email</p>
-                  <p class="contact-lines__text animate-in-up">
+                  <p class="animate-in-up contact-lines__title">Email</p>
+                  <p class="animate-in-up contact-lines__text">
                     <a class="text-link-bold" href="mailto:arslanulfat8686@gmail.com?subject=Message%20from%20your%20site">arslanulfat8686@gmail.com</a>
                   </p>
                 </div>
@@ -919,7 +919,7 @@
         </div>
 
         <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__ui--hidden pswp__ui">
 
           <div class="pswp__top-bar">
 
@@ -946,13 +946,13 @@
             </div>
           </div>
 
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-modal--hidden pswp__share-modal pswp__single-tap">
               <div class="pswp__share-tooltip"></div>
             </div>
 
-            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+            <button class="pswp__button--arrow--left pswp__button link-s" title="Previous (arrow left)"></button>
 
-            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+            <button class="pswp__button--arrow--right pswp__button link-s" title="Next (arrow right)"></button>
 
             <div class="pswp__caption">
               <div class="pswp__caption__center"></div>
