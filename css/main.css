@@ -75,9 +75,9 @@
   --_animspeed-slow: 0.6s;
   --_animbezier: cubic-bezier(0.23, 0.65, 0.74, 1.09);
   /* light color scheme */
-  --base--light: #e6ebf4;
-  --base-tint--light: #ebf0f7;
-  --base-shade--light: #bdc1c8;
+  --base--light: #d4e8e1;
+  --base-tint--light: #dff5ee;
+  --base-shade--light: #aec9bf;
   --accent--light: #aa70e0;
   --secondary--light: #7059e2;
   --secondary-rgba--light: rgba(112,89,226,0.3);
@@ -95,13 +95,13 @@
   --t-opp-bright--light: #ebf0f7;
   --t-opp-medium--light: #C7C6D3;
   --t-opp-muted--light: #A1A1AF;
-  --gradient-one--light: #CEC4EF;
-  --gradient-two--light: #f5c5cd;
-  --gradient-three--light: #ac8fe3;
+  --gradient-one--light: #ecbec9;
+  --gradient-two--light: #c5ddd4;
+  --gradient-three--light: #9dc9b8;
   /* dark color scheme */
-  --base--dark: #111111;
-  --base-tint--dark: #161616;
-  --base-shade--dark: #000000;
+  --base--dark: #131b18;
+  --base-tint--dark: #1a2522;
+  --base-shade--dark: #0a0f0d;
   --accent--dark: #E4B8BF;
   --secondary--dark: #CEC4EF;
   --secondary-rgba--dark: rgba(206,196,239,0.2);
@@ -119,9 +119,9 @@
   --t-opp-bright--dark: #121319;
   --t-opp-medium--dark: #626577;
   --t-opp-muted--dark: #717586;
-  --gradient-one--dark: #a287d5;
-  --gradient-two--dark: #E4B8BF;
-  --gradient-three--dark: #8b6bc5;
+  --gradient-one--dark: #b87d8a;
+  --gradient-two--dark: #4d7368;
+  --gradient-three--dark: #3d5c54;
   /* permanent colors */
   --per-base: #111111;
   --per-base-tint: #212121;
@@ -395,6 +395,31 @@ img {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Dusty rose spotlight (upper right), similar to sage + pink reference moodboards */
+.gradient-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(
+    ellipse 58% 52% at 94% 6%,
+    rgba(236, 188, 198, 0.55) 0%,
+    rgba(236, 188, 198, 0.16) 38%,
+    transparent 58%
+  );
+}
+
+[color-scheme="dark"] .gradient-background::before {
+  background: radial-gradient(
+    ellipse 54% 48% at 94% 8%,
+    rgba(195, 115, 132, 0.38) 0%,
+    rgba(195, 115, 132, 0.1) 42%,
+    transparent 62%
+  );
 }
 
 .blur {
@@ -2580,12 +2605,23 @@ form textarea:required:valid {
 
 .certificate-card__figure {
   margin: 0;
-  padding: 0;
+  padding: 0.85rem;
   background-color: var(--base);
   border: 1px solid var(--stroke-elements);
   -moz-border-radius: var(--_radius-xl);
        border-radius: var(--_radius-xl);
   overflow: hidden;
+  /* PNGs use different aspect ratios; uniform box keeps card heights aligned */
+  aspect-ratio: 4 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+          justify-content: center;
   line-height: 0;
   -webkit-transition: box-shadow var(--_animspeed-medium) ease;
   -moz-transition: box-shadow var(--_animspeed-medium) ease;
@@ -2598,8 +2634,12 @@ form textarea:required:valid {
 
 .certificate-card__img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .certificate-card__title {
