@@ -2552,6 +2552,11 @@ form textarea:required:valid {
   max-width: 28rem;
 }
 
+.recognition-grid .recognition-card {
+  max-width: none;
+  height: 100%;
+}
+
 .recognition-card__figure {
   margin: 0 0 1.25rem 0;
   padding: 0;
@@ -2605,23 +2610,16 @@ form textarea:required:valid {
 
 .certificate-card__figure {
   margin: 0;
-  padding: 0.85rem;
+  padding: 0;
   background-color: var(--base);
   border: 1px solid var(--stroke-elements);
   -moz-border-radius: var(--_radius-xl);
        border-radius: var(--_radius-xl);
   overflow: hidden;
-  /* PNGs use different aspect ratios; uniform box keeps card heights aligned */
-  aspect-ratio: 4 / 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-     -ms-flex-pack: center;
-          justify-content: center;
+  /* Square frame + cover: same visual fill even when source PNGs have different padding/aspect */
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: stretch;
   line-height: 0;
   -webkit-transition: box-shadow var(--_animspeed-medium) ease;
   -moz-transition: box-shadow var(--_animspeed-medium) ease;
@@ -2634,12 +2632,12 @@ form textarea:required:valid {
 
 .certificate-card__img {
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .certificate-card__title {
