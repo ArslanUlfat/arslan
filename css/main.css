@@ -2519,6 +2519,91 @@ form textarea:required:valid {
   margin: 0 0 2.5rem 0;
 }
 
+.skills-matrix-showcase {
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+}
+
+.skills-matrix-showcase .section-h3,
+.skills-matrix-showcase .skills-matrix__lede {
+  position: relative;
+  z-index: 1;
+}
+
+.skills-matrix-showcase::before {
+  content: "";
+  position: absolute;
+  width: min(52vw, 340px);
+  height: min(52vw, 340px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(15, 118, 110, 0.14) 0%, transparent 68%);
+  top: -2rem;
+  left: -18%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.skills-matrix-showcase::after {
+  content: "";
+  position: absolute;
+  width: min(44vw, 260px);
+  height: min(44vw, 260px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236, 190, 200, 0.22) 0%, transparent 70%);
+  bottom: 10%;
+  right: -12%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@supports not (overflow-x: clip) {
+  .skills-matrix-showcase {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skills-matrix-showcase::before {
+    left: max(-3.5rem, -16vw);
+    top: -1.25rem;
+    width: min(78vw, 300px);
+    height: min(78vw, 300px);
+  }
+
+  .skills-matrix-showcase::after {
+    right: max(-2.5rem, -14vw);
+    bottom: 4%;
+    width: min(70vw, 260px);
+    height: min(70vw, 260px);
+  }
+
+  .skills-matrix.skills-matrix--showcase {
+    gap: 1rem;
+  }
+
+  .skills-matrix--showcase .skills-matrix__group {
+    padding: 1.1rem 0.95rem 0.95rem 0.95rem;
+  }
+
+  .skills-matrix--showcase .skills-matrix__tags .rounded-tag.tag-outline {
+    max-width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .recognition-grid.row {
+    --bs-gutter-x: 0.75rem;
+    --bs-gutter-y: 0.75rem;
+  }
+
+  .recognition-grid .recognition-card__figure {
+    -moz-border-radius: 1rem;
+         border-radius: 1rem;
+  }
+}
+
 .skills-matrix {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2530,6 +2615,89 @@ form textarea:required:valid {
   gap: 2rem;
 }
 
+.skills-matrix.skills-matrix--showcase {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills-matrix.skills-matrix--showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 1.15rem;
+    -webkit-box-align: stretch;
+       -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .skills-matrix.skills-matrix--showcase {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem 1rem;
+  }
+}
+
+.skills-matrix--showcase .skills-matrix__group {
+  position: relative;
+  padding: 1.35rem 1.3rem 1.15rem 1.3rem;
+  border-radius: 1rem;
+  border: 1px solid var(--stroke-elements);
+  background-color: var(--base);
+  background-image: -webkit-linear-gradient(155deg, var(--base-tint) 0%, transparent 52%);
+  background-image: -moz-linear-gradient(155deg, var(--base-tint) 0%, transparent 52%);
+  background-image: linear-gradient(155deg, var(--base-tint) 0%, transparent 52%);
+  -webkit-box-shadow: 0 14px 36px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 14px 36px rgba(0, 0, 0, 0.07);
+  -webkit-transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  transition: box-shadow var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier);
+  transition: box-shadow var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  overflow: hidden;
+}
+
+.skills-matrix--showcase .skills-matrix__group::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 1rem 1rem 0 0;
+  opacity: 0.92;
+}
+
+.skills-matrix--showcase .skills-matrix__group:nth-child(3n + 1)::before {
+  background: -webkit-linear-gradient(left, var(--accent) 0%, var(--secondary) 100%);
+  background: -moz-linear-gradient(left, var(--accent) 0%, var(--secondary) 100%);
+  background: linear-gradient(90deg, var(--accent) 0%, var(--secondary) 100%);
+}
+
+.skills-matrix--showcase .skills-matrix__group:nth-child(3n + 2)::before {
+  background: -webkit-linear-gradient(left, var(--secondary) 0%, rgba(228, 184, 191, 0.95) 100%);
+  background: -moz-linear-gradient(left, var(--secondary) 0%, rgba(228, 184, 191, 0.95) 100%);
+  background: linear-gradient(90deg, var(--secondary) 0%, rgba(228, 184, 191, 0.95) 100%);
+}
+
+.skills-matrix--showcase .skills-matrix__group:nth-child(3n)::before {
+  background: -webkit-linear-gradient(left, rgba(228, 184, 191, 0.85) 0%, var(--accent) 100%);
+  background: -moz-linear-gradient(left, rgba(228, 184, 191, 0.85) 0%, var(--accent) 100%);
+  background: linear-gradient(90deg, rgba(228, 184, 191, 0.85) 0%, var(--accent) 100%);
+}
+
+@media (hover: hover) {
+  .skills-matrix--showcase .skills-matrix__group:hover {
+    -webkit-transform: translateY(-3px);
+       -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 20px 44px rgba(0, 0, 0, 0.11);
+            box-shadow: 0 20px 44px rgba(0, 0, 0, 0.11);
+  }
+}
+
 .skills-matrix__label {
   font-size: 0.8125rem;
   font-weight: 600;
@@ -2539,6 +2707,43 @@ form textarea:required:valid {
   margin: 0 0 0.85rem 0;
 }
 
+.skills-matrix--showcase .skills-matrix__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+          align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.95rem;
+}
+
+.skills-matrix--showcase .skills-matrix__label::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  background-color: var(--accent);
+  -webkit-box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.18);
+          box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.18);
+}
+
+.skills-matrix--showcase .skills-matrix__group:nth-child(3n + 2) .skills-matrix__label::before {
+  background-color: var(--secondary);
+  -webkit-box-shadow: 0 0 0 3px rgba(112, 89, 226, 0.18);
+          box-shadow: 0 0 0 3px rgba(112, 89, 226, 0.18);
+}
+
+.skills-matrix--showcase .skills-matrix__group:nth-child(3n) .skills-matrix__label::before {
+  background-color: rgba(228, 184, 191, 0.95);
+  -webkit-box-shadow: 0 0 0 3px rgba(236, 190, 200, 0.35);
+          box-shadow: 0 0 0 3px rgba(236, 190, 200, 0.35);
+}
+
 .skills-matrix__tags {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2546,6 +2751,34 @@ form textarea:required:valid {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 0.5rem 0.65rem;
+}
+
+.skills-matrix--showcase .skills-matrix__tags .rounded-tag.tag-outline {
+  margin: 0;
+  height: auto;
+  min-height: 2.55rem;
+  padding: 0.5rem 1.05rem;
+  -moz-border-radius: 0.625rem;
+       border-radius: 0.625rem;
+  font-size: clamp(0.8125rem, 0.78rem + 0.12vw, 0.9375rem);
+  line-height: 1.35;
+  -webkit-transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
+  transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
+  transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier), box-shadow var(--_animspeed-medium) var(--_animbezier);
+  transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier), box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
+}
+
+@media (hover: hover) {
+  .skills-matrix--showcase .skills-matrix__tags .rounded-tag.tag-outline:hover {
+    border-color: var(--accent);
+    color: var(--t-bright);
+    -webkit-transform: translateY(-2px);
+       -moz-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+            transform: translateY(-2px);
+    -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .recognition-card {
@@ -2963,7 +3196,8 @@ form textarea:required:valid {
   padding: 0 1.5rem;
 }
 .content__block.grid-block {
-  padding: 0;
+  /* Match default content inset on small screens; plain .content__block had padding while grid did not, so captions (e.g. Recognition) sat flush to the edge vs Work experience. */
+  padding: 0 1.5rem;
 }
 @media only screen and (min-width: 768px) {
   .content__block {
