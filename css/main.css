@@ -4541,6 +4541,11 @@ form textarea:required:valid {
   height: 60px;
   margin: 0 auto;
 }
+
+[color-scheme="dark"] .tools-cards__icon--invert-dark {
+  -webkit-filter: invert(1) brightness(1.06);
+          filter: invert(1) brightness(1.06);
+}
 .tools-cards__fab {
   display: block;
   width: auto;
