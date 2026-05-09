@@ -2270,11 +2270,11 @@ form textarea:required:valid {
 .contact-lead {
   --contact-teal: #0f766e;
   --contact-teal-hover: #115e59;
-  --contact-card: #ffffff;
-  --contact-card-border: #e2e8f0;
-  --contact-muted: #64748b;
-  --contact-field-bg: #f8fafc;
-  --contact-text: #0f172a;
+  --contact-card: var(--base-tint);
+  --contact-card-border: var(--stroke-elements);
+  --contact-muted: var(--t-muted);
+  --contact-field-bg: var(--base);
+  --contact-text: var(--t-bright);
 }
 
 .contact-lead__heading {
@@ -2282,7 +2282,7 @@ form textarea:required:valid {
 }
 
 .contact-lead__eyebrow {
-  font-size: 0.75rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -2300,7 +2300,7 @@ form textarea:required:valid {
 }
 
 .contact-lead__lede {
-  font-size: 1.125rem;
+  font-size: var(--_size);
   line-height: 1.55;
   color: var(--t-medium);
   max-width: 40rem;
@@ -2339,7 +2339,7 @@ form textarea:required:valid {
 
 .contact-field__label {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--contact-muted);
   margin-bottom: 0.45rem;
@@ -2352,14 +2352,12 @@ form textarea:required:valid {
   width: 100%;
   margin: 0;
   padding: 0.75rem 1rem;
-  font: normal 500 1rem/1.45 var(--_font-default);
+  font: normal 500 var(--_size)/1.45 var(--_font-default);
   color: var(--contact-text);
   background-color: var(--contact-field-bg);
   border: 1px solid var(--contact-card-border);
   border-radius: 0.65rem;
   outline: none;
-  -webkit-transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  -moz-transition: border-color 0.2s ease, box-shadow 0.2s ease;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -2396,13 +2394,13 @@ form textarea:required:valid {
 }
 
 .contact-lead__card form ::-webkit-input-placeholder {
-  color: #94a3b8;
+  color: var(--t-placeholder);
 }
 .contact-lead__card form ::-moz-placeholder {
-  color: #94a3b8;
+  color: var(--t-placeholder);
 }
 .contact-lead__card form :-ms-input-placeholder {
-  color: #94a3b8;
+  color: var(--t-placeholder);
 }
 
 .contact-lead__footer {
@@ -2454,7 +2452,7 @@ form textarea:required:valid {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--contact-text);
   text-decoration: none;
@@ -2480,15 +2478,11 @@ form textarea:required:valid {
   padding: 0.85rem 1.35rem;
   border: none;
   border-radius: 999px;
-  font: normal 600 0.9375rem/1 var(--_font-default);
+  font: normal 600 var(--_size)/1 var(--_font-default);
   color: #ffffff;
   background-color: var(--contact-teal);
   cursor: pointer;
-  -webkit-transition: background-color 0.2s ease, -webkit-transform 0.15s ease;
-  transition: background-color 0.2s ease, -webkit-transform 0.15s ease;
-  -moz-transition: background-color 0.2s ease, transform 0.15s ease, -moz-transform 0.15s ease;
   transition: background-color 0.2s ease, transform 0.15s ease;
-  transition: background-color 0.2s ease, transform 0.15s ease, -webkit-transform 0.15s ease, -moz-transform 0.15s ease;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -2512,7 +2506,7 @@ form textarea:required:valid {
 }
 
 .skills-matrix__lede {
-  font-size: 1rem;
+  font-size: var(--_size);
   line-height: 1.55;
   color: var(--t-medium);
   max-width: 42rem;
@@ -2651,10 +2645,7 @@ form textarea:required:valid {
   background-image: linear-gradient(155deg, var(--base-tint) 0%, transparent 52%);
   -webkit-box-shadow: 0 14px 36px rgba(0, 0, 0, 0.07);
           box-shadow: 0 14px 36px rgba(0, 0, 0, 0.07);
-  -webkit-transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier);
-  transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   transition: box-shadow var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier);
-  transition: box-shadow var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   overflow: hidden;
 }
 
@@ -2760,12 +2751,9 @@ form textarea:required:valid {
   padding: 0.5rem 1.05rem;
   -moz-border-radius: 0.625rem;
        border-radius: 0.625rem;
-  font-size: clamp(0.8125rem, 0.78rem + 0.12vw, 0.9375rem);
+  font-size: clamp(1.4rem, 1.35rem + 0.2vw, var(--_size));
   line-height: 1.35;
-  -webkit-transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
-  transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
   transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier), box-shadow var(--_animspeed-medium) var(--_animbezier);
-  transition: border-color var(--_animspeed-medium) var(--_animbezier), color var(--_animspeed-medium) var(--_animbezier), transform var(--_animspeed-medium) var(--_animbezier), box-shadow var(--_animspeed-medium) var(--_animbezier), -webkit-transform var(--_animspeed-medium) var(--_animbezier), -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
 }
 
 @media (hover: hover) {
@@ -2817,7 +2805,7 @@ form textarea:required:valid {
 .certificates__intro {
   margin: 0 0 2rem 0;
   max-width: 40rem;
-  font-size: 1rem;
+  font-size: var(--_size);
   line-height: 1.55;
   color: var(--t-medium);
 }
