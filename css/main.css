@@ -2345,11 +2345,15 @@ form textarea:required:valid {
   margin-bottom: 0.45rem;
 }
 
-.contact-lead__card form input,
-.contact-lead__card form textarea,
-.contact-lead__card form select {
+form.contact-lead__card input:not([type="hidden"]),
+form.contact-lead__card textarea,
+form.contact-lead__card select {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0.75rem 1rem;
   font: normal 500 var(--_size)/1.45 var(--_font-default);
@@ -2361,45 +2365,55 @@ form textarea:required:valid {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact-lead__card form textarea {
+form.contact-lead__card textarea {
   height: 11rem;
   resize: vertical;
   min-height: 8rem;
 }
 
-.contact-lead__card form select {
+form.contact-lead__card select {
   cursor: pointer;
+  line-height: 1.45;
+  min-height: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-color: var(--contact-field-bg);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2364748b' viewBox='0 0 256 256'%3E%3Cpath d='M215.39 92.7a8 8 0 0 0-11.3 0L128 168.68 51.91 92.7a8 8 0 0 0-11.32 11.32l80 80a8 8 0 0 0 11.32 0l80-80a8 8 0 0 0-.52-11.32Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 0.85rem center;
+  background-position: right 0.75rem center;
   background-size: 1rem;
-  padding-right: 2.5rem;
+  padding-right: 2.15rem;
 }
 
-.contact-lead__card form input:focus,
-.contact-lead__card form textarea:focus,
-.contact-lead__card form select:focus {
+form.contact-lead__card select::-ms-expand {
+  display: none;
+}
+
+form.contact-lead__card input:not([type="hidden"]):focus,
+form.contact-lead__card textarea:focus,
+form.contact-lead__card select:focus {
   border-color: var(--contact-teal);
   box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.2);
 }
 
-.contact-lead__card form input:required:valid,
-.contact-lead__card form textarea:required:valid,
-.contact-lead__card form input:focus:required:invalid,
-.contact-lead__card form textarea:focus:required:invalid {
+form.contact-lead__card input:not([type="hidden"]):required:valid,
+form.contact-lead__card textarea:required:valid,
+form.contact-lead__card input:not([type="hidden"]):focus:required:invalid,
+form.contact-lead__card textarea:focus:required:invalid {
   color: var(--contact-text);
 }
 
-.contact-lead__card form ::-webkit-input-placeholder {
+form.contact-lead__card ::-webkit-input-placeholder {
   color: var(--t-placeholder);
 }
-.contact-lead__card form ::-moz-placeholder {
+form.contact-lead__card ::-moz-placeholder {
   color: var(--t-placeholder);
 }
-.contact-lead__card form :-ms-input-placeholder {
+form.contact-lead__card :-ms-input-placeholder {
   color: var(--t-placeholder);
 }
 
